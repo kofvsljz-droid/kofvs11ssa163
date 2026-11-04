@@ -1,0 +1,717 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: warning
+
+proxies:
+  - name: "直连-香港01"
+    type: mieru
+    server: hk.cdn.games.cdnazuremicrosoft.com
+    port: 443
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-香港02"
+    type: mieru
+    server: hk.box.cdnazuremicrosoft.com
+    port: 8443
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-香港03"
+    type: mieru
+    server: boxhk.cdnazuremicrosoft.com
+    port: 65535
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-香港04-5x"
+    type: mieru
+    server: hk.box0.cdnazuremicrosoft.com
+    port: 8443
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-新加坡01-5x"
+    type: mieru
+    server: sg.index.cdnazuremicrosoft.com
+    port: 443
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-日本01-5x"
+    type: mieru
+    server: jp1.cdn.games.cdnazuremicrosoft.com
+    port: 3389
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-美国01"
+    type: mieru
+    server: index.us.cdnazuremicrosoft.com
+    port: 443
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-美国02"
+    type: mieru
+    server: us.index2.cdnazuremicrosoft.com
+    port: 80
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-美国03"
+    type: mieru
+    server: us.index3.cdnazuremicrosoft.com
+    port: 8888
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "直连-美国04"
+    type: mieru
+    server: us.index4.cdnazuremicrosoft.com
+    port: 8443
+    username: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    password: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    transport: TCP
+    udp: true
+
+  - name: "pro-香港-01"
+    type: vless
+    server: 48739.sdwan.digitaldashcloud.com
+    port: 58711
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: xcvDnr-7GFZkLWZgOjNozMFBJNK96lMZJeJ27idnTGc
+      short-id: 9e88606340b91187
+
+  - name: "pro-香港-02"
+    type: vless
+    server: 33046.sdwan.digitaldashcloud.com
+    port: 58712
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: en2L9xxQOv2w4eD0sxqu3eOFGnqOxZLWuR9sFqBDdAM
+      short-id: f266fd3d4e
+
+  - name: "pro-香港-03"
+    type: vless
+    server: 94212.sdwan.digitaldashcloud.com
+    port: 58713
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: ios
+    reality-opts:
+      public-key: pDLX46ucLtF5q13vH65lR_2ztY0TNzuAvoHc_MybS0Q
+      short-id: 715335e6264a13
+
+  - name: "pro-香港-04"
+    type: vless
+    server: 33964.sdwan.digitaldashcloud.com
+    port: 58714
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: fO1QeHsh4kk_UXGuQnsS6KXD8Lm9oZaeMY-DEz8K4zI
+      short-id: f8d3a365119b
+
+  - name: "pro-香港-05"
+    type: vless
+    server: 85185.sdwan.digitaldashcloud.com
+    port: 58715
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: xhQQ393yiOwgfp2JzIu0Qfg-5oG3M5Y71mBmI0WM9kU
+      short-id: eab17137bf1d2bad
+
+  - name: "pro-家庭宽带-香港hkbn"
+    type: vless
+    server: 62088.sdwan.digitaldashcloud.com
+    port: 57980
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: P8ZxAGiNKlC01DAZozRQMmjaIteTYniaiUemZfA4Pnw
+      short-id: a7265b39
+
+  - name: "pro-家庭宽带-香港cmhk"
+    type: vless
+    server: 45112.sdwan.digitaldashcloud.com
+    port: 48741
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: uBxSs6VRu8YTdOqtrj07gqmX_0rlzKoGIkIm-qAFFG0
+      short-id: fe92059c14
+
+  - name: "pro-美国01"
+    type: vless
+    server: 60019.sdwan.digitaldashcloud.com
+    port: 60775
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 2J1JGfkg39tJVB_Yv9fZPHCwuB_AfTBtMygLOyu6EFg
+      short-id: eaf7f5
+
+  - name: "pro-美国02"
+    type: vless
+    server: 38823.sdwan.digitaldashcloud.com
+    port: 60776
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: rPR7TUpmOpwShZeyLs2QFa46zzCBNkNdYkxe7-trUUc
+      short-id: 63290ae7179078
+
+  - name: "pro-美国03"
+    type: vless
+    server: 03190.sdwan.digitaldashcloud.com
+    port: 60777
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: auZ3lOH__9P934nW11MtEbDIbj6Bwdb9FxtXec2m-jI
+      short-id: 796ab5b5f7
+
+  - name: "pro-美国04"
+    type: vless
+    server: 09310.sdwan.digitaldashcloud.com
+    port: 60778
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: oWW0W-HnpRDLoE2XwW-O84ZCbaJDjXO0JtHd45rMpG8
+      short-id: d8e6a481cdea
+
+  - name: "pro-家庭宽带-美国ATT01-2X"
+    type: vless
+    server: 08285.sdwan.digitaldashcloud.com
+    port: 21219
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: qbcOMmvb5LtH988JE_MqJ0glRWjb9yl9mBj2v3ixdVc
+      short-id: ffc0bcfb
+
+  - name: "pro-家庭宽带-美国ATT02-2X"
+    type: vless
+    server: 50465.sdwan.digitaldashcloud.com
+    port: 50022
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: ios
+    reality-opts:
+      public-key: 4IVQhlWjwhdd0HifWkcG0ZI7rBAWt5iShZV1KoEceX0
+      short-id: be594c4068c89d
+
+  - name: "pro-新加坡01"
+    type: vless
+    server: 48953.sdwan.digitaldashcloud.com
+    port: 5453
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: ME3WVet9JGIOTjNStEo0B5-cIvIMKDUwDKbjw-aBSEo
+      short-id: 9a63ebd579
+
+  - name: "pro-新加坡02"
+    type: vless
+    server: 53288.sdwan.digitaldashcloud.com
+    port: 55567
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 0soGDTguByd3I9e2nLuzkw5BOHELZ_AHHDkA0Zx3JRA
+      short-id: f3f70ca767
+
+  - name: "pro-新加坡03"
+    type: vless
+    server: 73961.sdwan.digitaldashcloud.com
+    port: 56845
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: ag5gsMDFJWArRUR6gyL1PxMBGBdXzoriLj5dkFh7xGU
+      short-id: d11b9a32be
+
+  - name: "pro-新加坡04"
+    type: vless
+    server: 69380.sdwan.digitaldashcloud.com
+    port: 56846
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 3emmWrmF-Ng86iKFuT6MiCFoWup4RSSqxQxRLR8TqB8
+      short-id: 88298adaffd382
+
+  - name: "pro-日本01"
+    type: vless
+    server: 49459.sdwan.digitaldashcloud.com
+    port: 55569
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: DPhViTQH8MZ2cPKNtB4_UNAq1_a32PlPHtQX49Yew1M
+      short-id: 4c5a975455f02a
+
+  - name: "pro-日本02"
+    type: vless
+    server: 12738.sdwan.digitaldashcloud.com
+    port: 5454
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
+      short-id: 4265cc8365
+
+  - name: "pro-日本03"
+    type: vless
+    server: 64929.sdwan.digitaldashcloud.com
+    port: 53349
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: T1WadTv22zNY4ioa72bywuI_Ga-7-tDTl3foTuHdMTc
+      short-id: 2fa31a8c56c3
+
+  - name: "pro-台湾01"
+    type: vless
+    server: 95474.sdwan.digitaldashcloud.com
+    port: 54387
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: qqb-vrDIPSrFIithw497zM-LmGUEcTo-dqAjhHi6kyY
+      short-id: f810
+
+  - name: "pro-家庭宽带-台湾hinet01"
+    type: vless
+    server: 64025.sdwan.digitaldashcloud.com
+    port: 5462
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: qq
+    reality-opts:
+      public-key: biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30
+      short-id: 4b7a508fcd3ef1a1
+
+  - name: "pro-家庭宽带-台湾hinet02"
+    type: vless
+    server: 19184.sdwan.digitaldashcloud.com
+    port: 5463
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
+      short-id: be33ecc1975c
+
+  - name: "pro-英国01"
+    type: vless
+    server: 43434.sdwan.digitaldashcloud.com
+    port: 5456
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: T12f62QAO_IXip2xZ3U-BevIkjWab0EjzdzYI9kYkFg
+      short-id: f4e3
+
+  - name: "pro-英国02"
+    type: vless
+    server: 08027.sdwan.digitaldashcloud.com
+    port: 5457
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: 8Ct9wBZLha-ePZMWbSau9ViKgbwlCgEsbGMjNnoVDzw
+      short-id: 9da3779ceafd
+
+  - name: "pro-泰国01-2x"
+    type: vless
+    server: 40199.sdwan.digitaldashcloud.com
+    port: 5458
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: NfmPfb_XeLj8j8cho5JkVKW3u_KA2G5UrZyOAhZAxn8
+      short-id: ba80520852fb9c25
+
+  - name: "pro-泰国02-2x"
+    type: vless
+    server: 39083.sdwan.digitaldashcloud.com
+    port: 5459
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: Von3W6smD_9vmKScjCG9ex6xw4_sG9MFfBk-9zbrbzs
+      short-id: 3fdc9f533b3fb068
+
+  - name: "pro-印度-2x"
+    type: vless
+    server: 25146.sdwan.digitaldashcloud.com
+    port: 50154
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: kIaMH-Cbd4HabpswpjqD_txSxXFbqFjz6PsIadG5nV0
+      short-id: 238303
+
+  - name: "pro-越南"
+    type: vless
+    server: 01124.sdwan.digitaldashcloud.com
+    port: 60013
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: mcL0jagupr0AWJCb80sHTxhsAgD1xnrpb1bM20UTT0U
+      short-id: 31cef3438d
+
+  - name: "pro-荷兰"
+    type: vless
+    server: 18516.sdwan.digitaldashcloud.com
+    port: 50127
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: images-na.ssl-images-amazon.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: j2r5QkmGAStKWg1v9Jx_jDiYesqYH0whplqIOZAbFws
+      short-id: 7d3f5fb3
+
+  - name: "pro-波兰"
+    type: vless
+    server: 76096.sdwan.digitaldashcloud.com
+    port: 58749
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: cG3XTVTPSxNTGwnQqzkwwTCkf1Bb4znRU13_En3hOls
+      short-id: d2e6c6c5
+
+  - name: "pro-马来西亚"
+    type: vless
+    server: 37009.sdwan.digitaldashcloud.com
+    port: 50174
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: tmlOT7vvbKwBuucRKRm33TqocfvHfgDAstvca5Yy-gU
+      short-id: 8b10495bdb
+
+  - name: "pro-家庭宽带-马来西亚-5x"
+    type: vless
+    server: 28065.sdwan.digitaldashcloud.com
+    port: 50684
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.adidas.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: F9djf8t16xjf7WRVmek0OWg_Q6OvmsZdI3rR9xiz2jI
+      short-id: 39c553a45e5649d9
+
+  - name: "lite-香港-01"
+    type: vless
+    server: 02726.cdn.digitaldashcloud.com
+    port: 2087
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: repost.aws
+    client-fingerprint: ios
+    reality-opts:
+      public-key: ALHje8E3d2TkkY2XnWRsZyw5nCptpdjHj1Yzs7_i_E8
+      short-id: 7b1602ae8a72ed0a
+
+  - name: "lite-香港-02"
+    type: vless
+    server: 04065.cdn.digitaldashcloud.com
+    port: 9443
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.eero.com
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: hY7qJ-wCkHHGHgsWYPxVX67YkyNgAexTG3kyWhifpy0
+      short-id: e1b7e52b41b7c0a7
+
+  - name: "lite-香港-03"
+    type: vless
+    server: 49763.cdn.digitaldashcloud.com
+    port: 5061
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: avs-alexa-na.amazon.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: wNrhtcfnWjGsoCZvg63C7YodW10yvcqmhXR0dtT783I
+      short-id: ddef6ecb8bd7ca0e
+
+  - name: "lite-香港家庭宽带-hkt01"
+    type: vless
+    server: 53272.cdn.digitaldashcloud.com
+    port: 10000
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: sellercentral.amazon.com
+    client-fingerprint: firefox
+    reality-opts:
+      public-key: zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw
+      short-id: 99aa2eb4f2c77af5
+
+  - name: "lite-美国01"
+    type: vless
+    server: 39411.cdn.digitaldashcloud.com
+    port: 2083
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: sellercentral.amazon.ae
+    client-fingerprint: ios
+    reality-opts:
+      public-key: jfCghsA56FO67wkLWAfCMSPYB1F6kQkkrojv5PsZKXI
+      short-id: b9a06699d73869a9
+
+  - name: "lite-美国02"
+    type: vless
+    server: 56141.cdn.digitaldashcloud.com
+    port: 8920
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: images-na.ssl-images-amazon.com
+    client-fingerprint: safari
+    reality-opts:
+      public-key: guYuZha_BnUq8TZ316FylutJ8EuHP5xRQsbGXIdNmBk
+      short-id: 384bb2cf00d91a90
+
+  - name: "lite-美国03"
+    type: vless
+    server: 48696.cdn.digitaldashcloud.com
+    port: 2053
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: business.amazon.com
+    client-fingerprint: edge
+    reality-opts:
+      public-key: NtE45klly89HE5x1djJrfvNnAokWO-OtV0FKD6n9_xU
+      short-id: 792e1c8de5b6e6d6
+
+  - name: "lite-新加坡01"
+    type: vless
+    server: 63369.cdn.digitaldashcloud.com
+    port: 6514
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: www.amazon.nl
+    client-fingerprint: edge
+    reality-opts:
+      public-key: qNd6MWRYFBgXnEqj3vf3K-bB9JZ5v3hVK1sdurgGWCs
+      short-id: 02e7b5b154e340ce
+
+  - name: "lite-新加坡02"
+    type: vless
+    server: 94076.cdn.digitaldashcloud.com
+    port: 15671
+    uuid: "eb0105ee-10df-41e8-ab31-c2c407cd1cef"
+    network:
